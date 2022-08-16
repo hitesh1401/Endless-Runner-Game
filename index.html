@@ -65,7 +65,7 @@
         companyName: "Shree Ganesh Games",
         productName: "Endless Run in Jungle",
         productVersion: "0.1",
-        
+        showBanner: unityShowBanner,
       };
 
       // By default Unity keeps WebGL canvas render target size matched with
@@ -90,7 +90,8 @@
 
         canvas.style.width = window.innerWidth + 'px';
         canvas.style.height = window.innerHeight + 'px';
-
+        
+        unityShowBanner('.');
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
